@@ -5,23 +5,25 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
+@EnableSwagger2
 public class SpringSecurityJwtApplication implements CommandLineRunner {
 
-	@Autowired
-	private ApplicationConfig myConfig;
+    @Autowired
+    private ApplicationConfig myConfig;
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 //		SpringApplication.run(SpringSecurityJwtApplication.class, args);
-		SpringApplication app = new SpringApplication(SpringSecurityJwtApplication.class);
-		app.run();
-	}
+        SpringApplication app = new SpringApplication(SpringSecurityJwtApplication.class);
+        app.run();
+    }
 
-	public void run(String... args) throws Exception {
-		System.out.println("using environment: " + myConfig.getEnvironment());
-		System.out.println("name: " + myConfig.getName());
-		System.out.println("servers: " + myConfig.getServers());
-	}
+    public void run(String... args) throws Exception {
+        System.out.println("using environment: " + myConfig.getEnvironment());
+        System.out.println("name: " + myConfig.getName());
+        System.out.println("servers: " + myConfig.getServers());
+    }
 }
 
