@@ -8,10 +8,10 @@
         <version>2.3.0.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>io.javabrains</groupId>
-    <artifactId>spring-security-jwt</artifactId>
+    <groupId>com.techienotes</groupId>
+    <artifactId>spring-microservice-security</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-security-jwt</name>
+    <name>spring-microservice-security</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
